@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   示例数据提取规则文件；按需取消注释并自定义。
+   详情参见 https://developer.android.com/about/versions/12/backup-restore#xml-changes。
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="file" path="datastore/openchat_local.preferences_pb"/>
+        <exclude domain="database" path="."/>
+        <!-- TODO：使用 <include> 和 <exclude> 控制备份内容。
+        <include .../>
+        <exclude .../>
+        -->
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="file" path="datastore/openchat_local.preferences_pb"/>
+        <exclude domain="database" path="."/>
+    </device-transfer>
+    <!--
+    <device-transfer>
+        <include .../>
+        <exclude .../>
+    </device-transfer>
+    -->
+</data-extraction-rules>

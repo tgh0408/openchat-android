@@ -1,0 +1,48 @@
+# IDE and local machine settings
+/.idea/
+*.iml
+local.properties
+
+# Gradle, Kotlin and Android build output
+.gradle/
+.kotlin/
+build/
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+
+# Local signing keys and credentials
+/openchat-signing/*
+!/openchat-signing/README.md
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+keystore.properties
+key.properties
+password.txt
+credentials.json
+secrets.json
+.env
+.env.*
+!.env.example
+
+# Local account databases
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.db-wal
+*.db-shm
+
+# Operating system files and diagnostic output
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+*.hprof
+hs_err_pid*
